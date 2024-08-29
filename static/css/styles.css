@@ -2,6 +2,140 @@ nav a{
     margin-right: 35px;
 }
 
+
+
+/* Very small screens */
+@media (max-width: 576px) {
+    nav {
+        margin-left: 135px;
+        margin-top: 10px;
+
+    }
+
+    #my_projects_nav_home{
+        margin-left: 50px;
+
+    }
+
+    #contact_nav_home{
+        margin-right: 20px;
+    }
+
+    nav a {
+        margin-right: 21px;
+    }
+}
+
+
+
+
+
+/* Very small screens */
+@media (max-width: 576px) {
+    #contact-me-heading {
+        padding-top: 50px;
+
+    }
+
+    #my_projects_nav_contact{
+        margin-right: 20px;
+
+    }
+
+    #home_nav_contact{
+        margin-left: 50px;
+    }
+
+    nav {
+        margin-left: 135px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin-right: 21px;
+    }
+
+
+}
+
+
+
+
+
+
+/* Very small screens */
+@media (max-width: 576px) {
+    #my-project-heading {
+        padding-top: 50px;
+
+    }
+
+    #home_nav_my_projects{
+        margin-left: 50px;
+
+
+    }
+
+    #contact_nav_my_projects{
+        margin-right: 20px;
+    }
+
+    nav {
+        margin-left: 135px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin-right: 21px;
+    }
+
+
+
+
+
+    #text_to_speech_heading{
+        font-size: 18.5px;
+        margin-left: 2px;
+    }
+
+    #get_10_colors{
+        font-size: 18.5px;
+        margin-left: 2px;
+    }
+
+    #typing_speed{
+        font-size: 18.5px;
+        margin-left: 2px;
+    }
+
+    #snake_game{
+        font-size: 18.5px;
+        margin-left: 2px;
+    }
+
+    #breakout_game{
+        font-size: 18.5px;
+        margin-left: 2px;
+    }
+
+    #disappearing_text{
+        font-size: 18.5px;
+        margin-left: 2px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 #intro{
     padding-top: 50px;
     font-size: 22px;
@@ -146,17 +280,18 @@ footer{
     text-decoration: underline;
 }
 
-#anitha_color-change{
+#contact_me_button{
     font-size:17px;
     margin-top: 18px;
     border-radius: 8px;
     background-color: Turquoise;
     border-color: Turquoise;
     border-width: 2px;
+    font-weight: 600;
 
 }
 
-#anitha_color-change:hover{
+#contact_me_button:hover{
     background-color: #23232b;
     color: white;
 }
@@ -260,52 +395,6 @@ footer{
 
 
 
-
-
-
-
-
-#carouselExampleCaptions{
-    margin-top: 60px;
-    margin-bottom:50px;
-
-}
-
-
-
-
-
-
-
-#carouselExampleCaptions{
-
-    margin-left: 200px;
-    margin-right: 200px;
-
-}
-
-
-
-.carousel-item{
-    filter: brightness(108%);
-}
-
-
-
-.carousel-caption h5{
-    background-color: brown;
-
-}
-
-.carousel-caption p{
-    font-size: 23px;
-
-}
-
-.carousel-caption p:hover{
-    color: yellow;
-}
-
 #intro br{
     content: "";
     margin: 1.8em;
@@ -326,6 +415,7 @@ footer{
     font: bold;
     color: black;
     border-width: 2px;
+    font-weight: 600;
 }
 
 
@@ -333,6 +423,126 @@ footer{
     background-color: #23232b;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+/* General Carousel Settings */
+#carouselExampleCaptions {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+/* Adjust carousel size on larger screens */
+@media (min-width: 992px) { /* Target screens larger than 992px (like laptops) */
+    #carouselExampleCaptions {
+        max-width: 52%; /* Reduce the carousel width to 75% */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-item img {
+        width: 100%; /* Ensure images fit within the reduced carousel size */
+    }
+
+    .carousel-caption {
+        margin-left: 50%; /* Adjust caption position */
+        max-width: 52%; /* Ensure caption width matches carousel width */
+    }
+}
+
+
+
+
+.carousel-item{
+    filter: brightness(108%);
+}
+
+
+/* Make sure carousel items fit the container */
+.carousel-item img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Style for captions */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    margin-left: 35%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: calc(100% - 40px);
+
+    text-align: center;
+
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Ensure text does not overflow */
+.carousel-caption h5 {
+    font-size: 1.5rem; /* Adjust this as necessary */
+    line-height: 1.2;
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+
+.carousel-caption h5:hover {
+    font-size: 1.53rem;
+    color: Turquoise;
+}
+
+
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .carousel-caption {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+        padding: 4px 0;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 576px) {
+    .carousel-caption {
+        margin-bottom: -15px;
+        padding: 1px 1px;
+        font-size: 0.8rem;
+
+    }
+    .carousel-caption h5:hover{
+        font-size: 0.9rem;
+    }
+    .carousel-indicators button {
+        margin-bottom: -15px;
+    }
+    .carousel-caption h5 {
+        font-size: 0.85rem;
+        padding: 3px 0;
+    }
+}
+
 
 
 

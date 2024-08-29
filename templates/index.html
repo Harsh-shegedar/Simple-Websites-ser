@@ -138,7 +138,7 @@
 
 
 
- <div id="carouselExampleCaptions" class="carousel slide">
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -148,34 +148,33 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./static/assets/img/FF1ST.jpg" height="380px" width="700px" alt="web development image">
-      <div class="carousel-caption d-none d-md-block">
-        <h5></h5>
-        <p>Empowering Your Online Presence with simple Websites</p>
+      <img src="./static/assets/img/FF1ST.jpg" class="d-block w-100" alt="web development image">
+      <div class="carousel-caption d-block">
+        <h5>Empowering Your Online Presence with simple Websites</h5>
+
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./static/assets/img/FF2ND.jpg" height="380px" width="700px" alt="web development image">
-      <div class="carousel-caption d-none d-md-block">
-        <h5></h5>
-        <p>A complete website with CSS for styling, databases and web hosting.
-        </p>
+      <img src="./static/assets/img/FF2ND.jpg" class="d-block w-100" alt="web development image">
+      <div class="carousel-caption d-block">
+        <h5>A complete website with CSS for styling, databases and web hosting.</h5>
+
+
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./static/assets/img/FF3RD.jpg" height="380px" width="700px" alt="web development image">
-      <div class="carousel-caption d-none d-md-block">
-        <h5></h5>
-        <p>Good hold on HTML to deliver you a modern, customised website that you desire.</p>
+      <img src="./static/assets/img/FF3RD.jpg" class="d-block w-100" alt="web development image">
+      <div class="carousel-caption d-block">
+        <h5>Good hold on HTML to deliver you a modern, customised website that you desire.</h5>
+
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./static/assets/img/FF4TH.jpg" height="380px" width="700px" alt="web development image">
-      <div class="carousel-caption d-none d-md-block">
-        <h5></h5>
-        <p>Styling and coloring your website with CSS
-          <br>We do have a good grip over it.
-        </p>
+      <img src="./static/assets/img/FF4TH.jpg" class="d-block w-100" alt="web development image">
+      <div class="carousel-caption d-block">
+        <h5>Styling & coloring your website with CSS.
+          <br>We do have a good grip over it.</h5>
+
       </div>
     </div>
   </div>
@@ -192,7 +191,7 @@
 
 
       <p class="lead">
-      <a href="{{ url_for('contact') }}" id="anitha_color-change" class="btn">Contact me</a>
+      <a href="{{ url_for('contact') }}" id="contact_me_button" class="btn">Contact me</a>
     </p>
   </main>
 
