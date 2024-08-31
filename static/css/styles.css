@@ -9,20 +9,28 @@ nav a{
     nav {
         margin-left: 135px;
         margin-top: 10px;
+        background-color: brown;
 
     }
 
-    #my_projects_nav_home{
-        margin-left: 50px;
 
-    }
-
-    #contact_nav_home{
-        margin-right: 20px;
-    }
 
     nav a {
         margin-right: 21px;
+    }
+
+    #contact_nav_home{
+        margin-right: -10px;
+    }
+
+    #my_projects_nav_home{
+        margin-left: -20px;
+    }
+
+    #home_page_nav{
+        margin-left: 162px;
+        width: 225px;
+        height: 30px;
     }
 }
 
@@ -37,14 +45,7 @@ nav a{
 
     }
 
-    #my_projects_nav_contact{
-        margin-right: 20px;
 
-    }
-
-    #home_nav_contact{
-        margin-left: 50px;
-    }
 
     nav {
         margin-left: 135px;
@@ -53,6 +54,16 @@ nav a{
 
     nav a {
         margin-right: 21px;
+    }
+
+    #my_projects_nav_contact{
+        margin-right: 0px;
+    }
+
+    #contact_page_nav{
+        margin-left: 162px;
+        width: 235px;
+        height: 30px;
     }
 
 
@@ -70,14 +81,8 @@ nav a{
 
     }
 
-    #home_nav_my_projects{
-        margin-left: 50px;
-
-
-    }
-
     #contact_nav_my_projects{
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     nav {
@@ -87,6 +92,12 @@ nav a{
 
     nav a {
         margin-right: 21px;
+    }
+
+    #project_page_nav{
+        margin-left: 162px;
+        width: 225px;
+        height: 30px;
     }
 
 
@@ -125,6 +136,15 @@ nav a{
 
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
